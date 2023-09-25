@@ -4,7 +4,7 @@ function App() {
   const [serverResponse, setServerResponse] = useState('');
 
   const fetchData = () => {
-    fetch('http://localhost:3000')
+    fetch('https://node-test-client.vercel.app')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
